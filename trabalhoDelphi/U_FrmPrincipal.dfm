@@ -26,6 +26,10 @@ object FrmPrincipal: TFrmPrincipal
         Caption = 'Tela 2'
         OnClick = ela21Click
       end
+      object ela31: TMenuItem
+        Caption = 'Tela 3'
+        OnClick = ela31Click
+      end
     end
   end
 end

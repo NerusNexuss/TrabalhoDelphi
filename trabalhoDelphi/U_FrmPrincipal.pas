@@ -12,8 +12,10 @@ type
     Principal: TMenuItem;
     Tela1: TMenuItem;
     ela21: TMenuItem;
+    ela31: TMenuItem;
     procedure Tela1Click(Sender: TObject);
     procedure ela21Click(Sender: TObject);
+    procedure ela31Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,11 +29,16 @@ implementation
 
 {$R *.dfm}
 
-uses U_FrmTela1, U_FrmTela2;
+uses U_FrmTela1, U_FrmTela2, U_FrmTela3;
 
 procedure TFrmPrincipal.ela21Click(Sender: TObject);
 begin
  FrmTela2.Show;
+end;
+
+procedure TFrmPrincipal.ela31Click(Sender: TObject);
+begin
+  FrmTela3.Show;
 end;
 
 procedure TFrmPrincipal.Tela1Click(Sender: TObject);

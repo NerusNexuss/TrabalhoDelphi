@@ -1,0 +1,46 @@
+unit U_FrmTela3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFrmTela3 = class(TForm)
+    EdtValor: TEdit;
+    RgPagamento: TRadioGroup;
+    BtnCalcular: TButton;
+    LbResultado: TLabel;
+    procedure RgPagamentoClick(Sender: TObject);
+    procedure BtnCalcularClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmTela3: TFrmTela3;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmTela3.BtnCalcularClick(Sender: TObject);
+  var
+    valorCompra, ValorFinal: Double;
+begin
+  if TryStrToFloat(EdtValor.Text, valorCompra) then
+    begin
+        case RgPagamento.ItemIndex of
+          0: valorFinal := valorCompra * 0.90;
+          1: valorFinal := valorCompra;
+          2: valorFinal := valorCompra * 1.05;
+        else
+          ShowMessage('Selecione uma forma de pagamento.');
+          Exit;
+       end;
+    end;
+  end;
+end.
