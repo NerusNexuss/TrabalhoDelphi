@@ -1,0 +1,53 @@
+unit U_FrmTela2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmTela2 = class(TForm)
+    BtnProcessar: TButton;
+    Label1: TLabel;
+    LbIdade: TLabel;
+    EdtNome: TEdit;
+    EdtIdade: TEdit;
+    LbResultado: TLabel;
+    procedure BtnProcessarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmTela2: TFrmTela2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmTela2.BtnProcessarClick(Sender: TObject);
+  var
+     nome,resultado: String;
+     idade: Integer;
+begin
+  nome:= (EdtNome.Text);
+  idade:= StrToInt(EdtIdade.Text);
+  LbResultado.Caption;
+
+if (idade >= 0) and (idade <= 12) then
+  begin
+    resultado := 'Crianca';
+  end
+  else
+  begin
+    resultado := '123';
+  end;
+
+  LbResultado.Caption := resultado;
+end;
+
+
+end.
