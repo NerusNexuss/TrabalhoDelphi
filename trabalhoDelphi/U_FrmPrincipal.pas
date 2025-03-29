@@ -38,7 +38,7 @@ end;
 
 procedure TFrmPrincipal.ela31Click(Sender: TObject);
 begin
-  FrmTela3.Show;
+ Form1.Show;
 end;
 
 procedure TFrmPrincipal.Tela1Click(Sender: TObject);

@@ -1,4 +1,4 @@
-unit U_FrmaTela3;
+unit U_FrmTela3;
 
 interface
 
@@ -7,10 +7,10 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
-  TFrmTela3 = class(TForm)
-    Edit1: TEdit;
-    RadioGroup1: TRadioGroup;
-    Label1: TLabel;
+  TForm1 = class(TForm)
+    EdtProduto: TEdit;
+    RgFormaPagamento: TRadioGroup;
+    LbResultado: TLabel;
     Button1: TButton;
     procedure Button1Click(Sender: TObject);
   private
@@ -20,32 +20,32 @@ type
   end;
 
 var
-  FrmTela3: TFrmTela3;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
 
-procedure TFrmTela3.Button1Click(Sender: TObject);
+procedure TForm1.Button1Click(Sender: TObject);
 var
   valorCompra, valorFinal: Double;
 begin
-  // Lê o valor digitado
-  valorCompra := StrToFloat(Edit1.Text);
 
-  // Verifica a opção selecionada no RadioGroup
-  case RadioGroup1.ItemIndex of
-    0: // À vista - 10% de desconto
+  valorCompra := StrToFloat(EdtProduto.Text);
+
+
+  case RgFormaPagamento.ItemIndex of
+    0:
       valorFinal := valorCompra * 0.90;
-    1: // Cartão - sem desconto
+    1:
       valorFinal := valorCompra;
-    2: // Parcelado - acréscimo de 5%
+    2:
       valorFinal := valorCompra * 1.05;
   else
-    valorFinal := valorCompra; // Caso nenhuma opção esteja selecionada
+    valorFinal := valorCompra;
   end;
 
-  // Exibe o valor final com duas casas decimais
-  Label1.Caption := 'Valor final: R$ ' + FormatFloat('0.00', valorFinal);
-end;
 
+ LbResultado.Caption := 'Valor final: R$ ' + FormatFloat('0.00', valorFinal);
+end;
+end.

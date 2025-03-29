@@ -135,8 +135,8 @@
             <Form>FrmTela2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="U_FrmaTela3.pas">
-            <Form>FrmTela3</Form>
+        <DCCReference Include="U_FrmTela3.pas">
+            <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

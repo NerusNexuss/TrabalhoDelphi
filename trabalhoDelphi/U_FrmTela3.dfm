@@ -1,7 +1,7 @@
-object FrmTela3: TFrmTela3
+object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'FrmTela3'
+  Caption = 'Form1'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -11,33 +11,38 @@ object FrmTela3: TFrmTela3
   Font.Name = 'Segoe UI'
   Font.Style = []
   TextHeight = 15
-  object Label1: TLabel
-    Left = 208
-    Top = 285
-    Width = 34
+  object LbResultado: TLabel
+    Left = 200
+    Top = 289
+    Width = 58
     Height = 15
-    Caption = 'Label1'
+    Caption = 'Resultado :'
   end
-  object Edit1: TEdit
-    Left = 184
-    Top = 128
-    Width = 121
+  object EdtProduto: TEdit
+    Left = 168
+    Top = 120
+    Width = 153
     Height = 23
     TabOrder = 0
-    Text = 'Edit1'
+    TextHint = 'Digite o valor do Produto'
   end
-  object RadioGroup1: TRadioGroup
-    Left = 184
-    Top = 157
+  object RgFormaPagamento: TRadioGroup
+    Left = 168
+    Top = 161
     Width = 185
     Height = 105
-    Caption = 'RadioGroup1'
+    Caption = 'RgFormaPagamento'
+    Items.Strings = (
+      #192' vista '
+      'Cart'#227'o '
+      'Parcelado')
     TabOrder = 1
+    StyleName = 'Windows'
   end
   object Button1: TButton
-    Left = 327
-    Top = 126
-    Width = 82
+    Left = 352
+    Top = 119
+    Width = 75
     Height = 25
     Caption = 'Button1'
     TabOrder = 2

@@ -5,7 +5,7 @@ uses
   U_FrmPrincipal in 'U_FrmPrincipal.pas' {FrmPrincipal},
   U_FrmTela1 in 'U_FrmTela1.pas' {FrmTela1},
   U_FrmTela2 in 'U_FrmTela2.pas' {FrmTela2},
-  U_FrmaTela3 in 'U_FrmaTela3.pas' {FrmTela3};
+  U_FrmTela3 in 'U_FrmTela3.pas' {Form1};
 
 {$R *.res}
 
@@ -15,6 +15,6 @@ begin
   Application.CreateForm(TFrmPrincipal, FrmPrincipal);
   Application.CreateForm(TFrmTela1, FrmTela1);
   Application.CreateForm(TFrmTela2, FrmTela2);
-  Application.CreateForm(TFrmTela3, FrmTela3);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
