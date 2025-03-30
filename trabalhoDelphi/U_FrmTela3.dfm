@@ -31,7 +31,7 @@ object Form1: TForm1
     Top = 161
     Width = 185
     Height = 105
-    Caption = 'RgFormaPagamento'
+    Caption = 'FormaPagamento'
     Items.Strings = (
       #192' vista '
       'Cart'#227'o '
@@ -44,7 +44,7 @@ object Form1: TForm1
     Top = 119
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Calcular'
     TabOrder = 2
     OnClick = Button1Click
   end

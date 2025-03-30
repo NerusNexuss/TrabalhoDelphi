@@ -139,6 +139,14 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="U_FrmTela4.pas">
+            <Form>FrmTela4</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="U_FrmTela5.pas">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
