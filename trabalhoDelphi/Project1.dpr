@@ -19,6 +19,5 @@ begin
   Application.CreateForm(TFrmTela2, FrmTela2);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFrmTela4, FrmTela4);
-  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

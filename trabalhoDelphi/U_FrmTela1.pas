@@ -29,6 +29,15 @@ implementation
 
 {$R *.dfm}
 
+function CalcularIMC(peso, altura: double):double;
+var
+  imc: double;
+begin
+
+imc := peso / (altura * altura);
+CalcularIMC := imc;
+
+end;
 procedure TFrmTela1.BtnCalcularClick(Sender: TObject);
 var
   Peso,Altura, IMC: Double;
@@ -43,7 +52,7 @@ begin
    exit;
   end;
 
-  IMC := Peso / (Altura * Altura);
+  IMC := CalcularIMC(Peso,Altura);
 
   if IMC < 18.5 then
     Classificacao := 'Magreza'
@@ -64,5 +73,7 @@ begin
 
 
 end;
+
+
 
 end.

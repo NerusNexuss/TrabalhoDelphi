@@ -28,6 +28,23 @@ implementation
 
 {$R *.dfm}
 
+function FeixaEtaria(idade: Integer): String;
+  var
+      resultado: String;
+begin
+  if (idade >= 0) and (idade <= 12) then
+    resultado := 'criança'
+  else if (idade >= 13) and (idade <= 17) then
+    resultado := 'adolescente'
+  else if (idade >= 18) and (idade <= 59) then
+    resultado := 'adulto'
+  else if (idade >= 60) then
+    resultado := 'idoso'
+  else
+    resultado := 'idade inválida';
+
+  FeixaEtaria := resultado;
+end;
 procedure TFrmTela2.BtnProcessarClick(Sender: TObject);
   var
      nome,resultado: String;
@@ -37,18 +54,7 @@ begin
   idade:= StrToInt(EdtIdade.Text);
   LbResultado.Caption;
 
-if (idade >= 0) and (idade <= 12) then
-    resultado := 'criança'
-else if (idade >= 13) and (idade <= 17) then
-    resultado := 'adolescente'
-else if (idade >= 18) and (idade <= 59) then
-    resultado := 'adulto'
-else if (idade >= 60) then
-    resultado := 'idoso'
-else
-    resultado := 'idade inválida';
-
-
+   resultado := FeixaEtaria(idade);
 
   LbResultado.Caption := nome + ' é ' + resultado;
 end;
