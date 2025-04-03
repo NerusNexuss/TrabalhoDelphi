@@ -31,5 +31,18 @@
     <Transaction>2025/03/30 08:57:17.000.843,=C:\Users\Nerus-PC\Documents\GitHub\TrabalhoDelphi\trabalhoDelphi\Unit2.pas</Transaction>
     <Transaction>2025/03/30 09:08:53.000.944,C:\Users\Nerus-PC\Documents\GitHub\TrabalhoDelphi\trabalhoDelphi\Unit2.dfm=C:\Users\Nerus-PC\Documents\GitHub\TrabalhoDelphi\trabalhoDelphi\U_FrmTela5.dfm</Transaction>
     <Transaction>2025/03/30 09:08:53.000.944,C:\Users\Nerus-PC\Documents\GitHub\TrabalhoDelphi\trabalhoDelphi\Unit2.pas=C:\Users\Nerus-PC\Documents\GitHub\TrabalhoDelphi\trabalhoDelphi\U_FrmTela5.pas</Transaction>
-  </Transactions>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="U_FrmPrincipal.pas"/>
+    <File Path="U_FrmPrincipal.dfm"/>
+    <File Path="U_FrmTela1.pas"/>
+    <File Path="U_FrmTela1.dfm"/>
+    <File Path="U_FrmTela2.pas"/>
+    <File Path="U_FrmTela2.dfm"/>
+    <File Path="U_FrmTela3.pas"/>
+    <File Path="U_FrmTela3.dfm"/>
+    <File Path="U_FrmTela4.pas"/>
+    <File Path="U_FrmTela4.dfm"/>
+    <File Path="U_FrmTela5.pas"/>
+    <File Path="U_FrmTela5.dfm"/>
+  </ProjectSortOrder>
 </BorlandProject>

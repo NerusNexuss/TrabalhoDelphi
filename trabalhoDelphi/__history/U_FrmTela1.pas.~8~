@@ -38,14 +38,6 @@ imc := peso / (altura * altura);
 CalcularIMC := imc;
 
 end;
-
-function ValidarDados(Peso, Altura: double): boolean;
-  var
-    ehValido := boolean;
-begin
-
-end;
-
 procedure TFrmTela1.BtnCalcularClick(Sender: TObject);
 var
   Peso,Altura, IMC: Double;
@@ -75,7 +67,7 @@ begin
 
   // Exibe os resultados nas labels
   LbIMC.Caption := 'IMC: ' + FormatFloat('0.00', IMC);
-  LbClassificacao.Caption := 'ClassificaÃ§Ã£o: ' + Classificacao;
+  LbClassificacao.Caption := 'Classificação: ' + Classificacao;
 
 
 

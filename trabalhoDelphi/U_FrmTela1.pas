@@ -38,6 +38,14 @@ imc := peso / (altura * altura);
 CalcularIMC := imc;
 
 end;
+
+function ValidarDados(Peso, Altura: double): boolean;
+  var
+    ehValido := boolean;
+begin
+
+end;
+
 procedure TFrmTela1.BtnCalcularClick(Sender: TObject);
 var
   Peso,Altura, IMC: Double;
