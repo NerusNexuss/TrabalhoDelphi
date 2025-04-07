@@ -26,26 +26,29 @@ implementation
 
 {$R *.dfm}
 
+
+function CalcularValorFinal(valorCompra: Double; formaPagamento: Integer): Double;
+begin
+  case formaPagamento of
+    0:
+      CalcularValorFinal := valorCompra * 0.90; // 10% de desconto
+    1:
+      CalcularValorFinal := valorCompra; // Sem alteração
+    2:
+      CalcularValorFinal := valorCompra * 1.05; // 5% de juros
+  else
+    CalcularValorFinal := valorCompra;
+  end;
+end;
+
 procedure TForm1.Button1Click(Sender: TObject);
 var
   valorCompra, valorFinal: Double;
 begin
-
   valorCompra := StrToFloat(EdtProduto.Text);
 
+  valorFinal := CalcularValorFinal(valorCompra, RgFormaPagamento.ItemIndex);
 
-  case RgFormaPagamento.ItemIndex of
-    0:
-      valorFinal := valorCompra * 0.90;
-    1:
-      valorFinal := valorCompra;
-    2:
-      valorFinal := valorCompra * 1.05;
-  else
-    valorFinal := valorCompra;
-  end;
-
-
- LbResultado.Caption := 'Valor final: R$ ' + FormatFloat('0.00', valorFinal);
+  LbResultado.Caption := 'Valor final: R$ ' + FormatFloat('0.00', valorFinal);
 end;
 end.

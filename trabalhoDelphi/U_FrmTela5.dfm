@@ -32,7 +32,7 @@ object FrmTela5: TFrmTela5
     Width = 121
     Height = 23
     TabOrder = 1
-    TextHint = 'Digite o S'#225'laio Bruto'
+    TextHint = 'Digite o S'#225'lario Bruto'
   end
   object EdtDependentes: TEdit
     Left = 216
