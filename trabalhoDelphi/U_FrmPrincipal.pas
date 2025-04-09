@@ -33,7 +33,7 @@ implementation
 
 {$R *.dfm}
 
-uses U_FrmTela1, U_FrmTela2, U_FrmTela3, U_FrmTela4, U_FrmTela5;
+uses U_FrmTela1, U_FrmTela2, U_FrmTela3, U_FrmTela4, U_FrmTela5, Unit3;
 
 procedure TFrmPrincipal.ela21Click(Sender: TObject);
 begin
@@ -52,7 +52,7 @@ end;
 
 procedure TFrmPrincipal.ela51Click(Sender: TObject);
 begin
-  FrmTela5.Show;
+  Form3.Show;
 end;
 
 procedure TFrmPrincipal.Tela1Click(Sender: TObject);

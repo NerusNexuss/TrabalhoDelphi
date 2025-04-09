@@ -7,7 +7,8 @@ uses
   U_FrmTela2 in 'U_FrmTela2.pas' {FrmTela2},
   U_FrmTela3 in 'U_FrmTela3.pas' {Form1},
   U_FrmTela4 in 'U_FrmTela4.pas' {FrmTela4},
-  U_FrmTela5 in 'U_FrmTela5.pas' {Form2};
+  U_FrmTela5 in 'U_FrmTela5.pas' {Form2},
+  Unit3 in 'Unit3.pas' {Form3};
 
 {$R *.res}
 
@@ -19,5 +20,6 @@ begin
   Application.CreateForm(TFrmTela2, FrmTela2);
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFrmTela4, FrmTela4);
+  Application.CreateForm(TForm3, Form3);
   Application.Run;
 end.
